@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-container {
+  background: #C8DDEE;
+}
+.nav-container a {
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+header .logo {
+  font-weight: bold;
+}
+header ul {
+  display: flex;
+}
+header ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+.hero {
+  background: #A3B9DB;
+  text-align: center;
+  display: grid;
+  padding: 4em;
+}
+
+.name {
+  color: white;
+}
+
+.hero-design1 {
+  display: none;
+}
+
+.hero-design2 {
+  width: 100%;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.about {
+  background: #D99E82;
+}
+.about .about-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+}
+
+.me, .car-drawing {
+  width: 293px;
+  border-radius: 7px;
+}
+
+.interests {
+  background: #FFCB4C;
+}
+.interests .interest-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.interests .interests-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.interests .interest-desc {
+  padding: 1em;
+}
+.interests .interests-container ul li {
+  background: white;
+  padding: 1em;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.interests .interests-container ul li .cars img {
+  width: 20em;
+  border-radius: 10px;
+}
+.interests .interests-container ul li .dogs-1 {
+  width: 10em;
+  border-radius: 10px;
+  z-index: 1;
+}
+.interests .interests-container ul li .dogs-2 {
+  position: relative;
+  border-radius: 10px;
+  z-index: 0;
+}
+.interests .interests-container ul li .under8ed img {
+  height: 150px;
+}
+
+.contact {
+  background: #3B88C3;
+}
+.contact .contact-title {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+.contact img {
+  height: 50px;
+  padding-left: 1em;
+}
+
+@media only screen and (min-width: 800px) {
+  .me {
+    padding-right: 1em;
+  }
+  .interests .interest-title {
+    font-weight: bold;
+  }
+  .interests .interests-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 1em;
+  }
+  .interests .interests-container ul li .cars img {
+    height: 20em;
+    border-radius: 10px;
+  }
+  .interests .interests-container ul li .under8ed img {
+    height: 18em;
+  }
+  .interests .interests-container ul li .icon-container {
+    height: 350px;
+  }
+  .interests .interests-container ul li .dogs-2 {
+    bottom: 75px;
+    width: 20em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .logo {
+    font-size: 3em;
+  }
+  nav {
+    font-size: 1.2em;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .hero {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+  .hero .content {
+    text-align: left;
+    font-size: 1.5em;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .hero .hero-design1 {
+    display: unset;
+    width: 30em;
+    float: right;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .hero .hero-design2 {
+    display: none;
+  }
+  .about {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+  .about .left {
+    margin-bottom: auto;
+  }
+  .about .right {
+    margin-left: 5em;
+  }
+  .about .right .me {
+    z-index: 1;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .about .right .car-drawing {
+    z-index: 0;
+    position: absolute;
+    margin-top: 10em;
+    right: 2em;
+  }
+  .interests .interests-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+  }
+}
+@media only screen and (min-width: 1500px) {
+  header {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .hero {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .hero .hero-design1 {
+    width: 35em;
+  }
+  .about {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .about .left {
+    margin-right: 100px;
+  }
+  .about .right .car-drawing {
+    right: 0;
+    margin-right: 100px;
+  }
+  .interests {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .interests .interests-container ul {
+    grid-gap: 3em;
+  }
+  .interests .interests-container ul li .cars img {
+    height: 22em;
+  }
+  .interests .interests-container ul li .dogs-1 {
+    margin-top: 100px;
+  }
+  .interests .interests-container ul li .dogs-2 {
+    top: 0px;
+    bottom: 0px;
+  }
+  .contact-desc {
+    font-size: 3em;
+    text-align: center;
+  }
+  .contact img {
+    height: 100px;
+    padding: 2em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}/*# sourceMappingURL=main.css.map */
